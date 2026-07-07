@@ -35,22 +35,21 @@ echo "<br>";
 echo SITE_URL;
 
 echo"<hr><h3>Constant vs Variable</h3>";
-//Defining a Constant(Fixed Value)
+// 1.Defining a Constant(Fixed Value)
 define("Tax_Rate", 0.06);  //6% Sales Tax
 
-//Declaring Variables (Can Change)
+// 2.Declaring Variables (Can Change)
 $itemName = "Laptop";
 $price = 2500;
 
 $itemName = "Mouse";
-$price = 10;
+$price = 25;
 
-
-//Calculation
+// 3.Calculation
 $totalTax = $price *  Tax_Rate;
 $totalPrice =$price + $totalTax;
 
-//Output
+// 4.Output
 echo "Item :" . $itemName . "<br>";
 echo "Base Price : RM " . $price . "<br>";
 echo "Total with Tax : RM " . $totalPrice;
